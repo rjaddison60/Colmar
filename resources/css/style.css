@@ -1,0 +1,395 @@
+html {
+  font-family: Helvetica;
+  font-size: 16px;
+}
+
+body {
+  display: block;
+}
+
+/* Navagation for header and footer */
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1.0rem;
+  float: right;
+}
+
+nav a {
+  line-height: 1.2;
+  font-size: 1rem;
+  text-decoration: none;
+  color: gray;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+/*  background-color: gray;*/
+}
+
+.main-content {
+  top: 4rem;
+  position: relative;
+  max-width: 75rem;
+  border-left: 1px gray solid;
+  border-right: 1px gray solid;
+  margin-bottom: 4rem;
+}
+
+.image-container img {
+  display: inline-block;
+}
+
+.content {
+  padding: 5% 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: roboto, sans-serif;
+}
+
+/* Header and navagation spec */
+/* Header */
+header {
+  position: fixed;
+  width: 100%;
+  border-bottom: solid 1px #000000;
+  background-color: white;
+  z-index: 2;
+}
+
+header .header {
+  display: flex;
+  align-items: center;
+  padding: 1.0rem 1.5rem 1.0rem 1.5rem;
+}
+
+header .logo {
+  flex: 1;
+  color: #4a4a4a;
+}
+
+header .bold {
+  font-weight: bold;
+}
+
+
+/* Banner specs */
+.banner {
+  background-color: gray;
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+  padding: 2rem 5rem 2rem 2rem;
+}
+
+.banner .image-container {
+  padding-right: 2rem;
+  max-width: 60%;
+}
+
+.banner .start-here {
+  display: flex;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner h1 {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  padding-bottom: 1.5rem;
+  padding-bottom: 1.75rem;
+}
+
+.banner p {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  padding-bottom: 1.75rem;
+}
+
+.button {
+  padding: 0.5rem 0;
+  text-align: center;
+  background-color: #4a4a4a;
+  color: white;
+  max-width: 80%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .banner .start-here {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .banner h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* Information Spec */
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  max-width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  border-right: : 1px black solid;
+}
+
+.information .main .image-container {
+  padding: 0 1.5rem 2rem 0;
+}
+
+.information .main .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main .content {
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+.main .bold {
+  font-weight: bold;
+  padding-top: 1.5rem;
+}
+
+.main h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.main p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main h2 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .image-container {
+  padding: 0 1rem 2rem 1rem;
+  max-width: 35%;
+}
+
+.about .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.trio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+/*  border-bottom: 1px gray solid;*/
+}
+
+.trio .content {
+  width: 65%;
+}
+
+.trio p {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .trio p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0.5rem 0;
+  }
+  .trio .content {
+    padding-top: 5%;
+    padding-bottom: 0;
+  }
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 4.5rem;
+  background-color: lightgray;
+}
+
+.learn h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.majors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+  max-width: 30%;
+  padding: 0.5rem;
+}
+
+.subject .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.subject .content {
+  background-color: white;
+  padding: 1rem;
+  height: 6rem;
+}
+
+.course {
+    padding: 0.5rem 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .subject .content p {
+    font-size: 0.9rem;
+  }
+}
+
+.thesis {
+  display: block;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.thesis-exhibit {
+    display: flex;
+}
+
+.thesis .video {
+  display: flex;
+  max-width: 60%;
+  flex-direction: column;
+  justify-content: center;
+  border-right: : 1px black solid;
+}
+
+.thesis .video-container {
+  padding: 0 1.5rem 2rem 0;
+}
+
+.thesis .content {
+  padding: 0 1.5rem 1.5rem 0;
+}
+
+.thesis h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.25rem;
+  padding-bottom: 1.5rem;
+}
+
+.thesis h3 {
+  padding-bottom: 0.5rem;
+}
+
+.exhibits {
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibits .image-container {
+  padding: 0 1rem 2rem 1rem;
+  max-width: 35%;
+}
+
+.exhibits .image-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.exhibit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.exhibit .content {
+  width: 65%;
+  padding: 5% 0;
+}
+
+.exhibit p {
+  font-size: 1rem;
+  line-height: 1.1rem;
+  padding: 0.75rem 0;
+}
+
+footer {
+  width: 100%;
+  border-top: solid 1px #000000;
+  background-color: white;
+}
+
+footer .copyright {
+  align-items: center;
+  padding: 1.0rem 1.5rem 1.0rem 1.5rem;
+}
+
+.links {
+  flex-grow: 1;
+  display: flex;
+  float: right;
+  justify-content: space-between;
+}
