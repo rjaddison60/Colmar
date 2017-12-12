@@ -1,4 +1,4 @@
-/*   */
+/* Global Specifications  */
 html {
   font-family: Helvetica;
   font-size: 16px;
@@ -63,7 +63,7 @@ video {
 }
 
 h1, h2, h3 {
-  font-weight: 600;
+  font-weight: 800;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -75,8 +75,7 @@ p {
   font-family: "Varela Round", sans-serif;
 }
 
-/* Header and navagation spec */
-/* Header */
+/* Header specs */
 header {
   position: fixed;
   width: 100%;
@@ -107,7 +106,7 @@ header .phone {
 .desktop a:hover {
   color: blue;
 }
-
+/* Header mobile specs */
 @media only screen and (max-width: 767px) {
   header .desktop {
     display: none;
@@ -146,7 +145,7 @@ header .phone {
 }
 
 .banner h1 {
-  font-weight: bolder;
+  font-weight: 800;
   font-size: 2.5rem;
   line-height: 2.75rem;
   padding-bottom: 1.75rem;
@@ -167,6 +166,11 @@ header .phone {
   max-width: 80%;
 }
 
+.button:hover {
+  color: blue;
+}
+
+/* Banner mobile landscape specs */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .banner .start-here {
     padding-top: 5%;
@@ -178,6 +182,7 @@ header .phone {
   }
 }
 
+/* Banner mobile specs */
 @media only screen and (max-width: 767px) {
   .banner {
     flex-direction: column;
@@ -240,6 +245,7 @@ header .phone {
   line-height: 1.2rem;
 }
 
+/* Information mobile landscape Specs */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .main h2 {
     font-size: 1.5rem;
@@ -247,6 +253,7 @@ header .phone {
   }
 }
 
+/* About and trio Specs */
 .about {
   display: flex;
   flex-direction: column;
@@ -293,6 +300,7 @@ header .phone {
   display: none;
 }
 
+/* About and trio mobile landscape Specs */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .trio p {
     font-size: 0.8rem;
@@ -305,12 +313,14 @@ header .phone {
   }
 }
 
+/* About and trio mobile Specs */
 @media only screen and (max-width: 767px) {
     .information .main {
     display: none;
   }
 }
 
+/* About and trio mobile (phone) Specs */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .information {
     padding-bottom: 2rem;
@@ -347,7 +357,6 @@ header .phone {
 
 .learn h2 {
   font-size: 2rem;
-  font-weight: bolder;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -391,12 +400,14 @@ header .phone {
   display: none;
 }
 
+/* Learning and courses available mobile landscape spec */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .subject .content p {
     font-size: 0.9rem;
   }
 }
 
+/* Learning and courses available mobile spec */
 @media only screen and (max-width: 767px) {
   .learn {
     padding: 2rem 1.5rem;
@@ -412,6 +423,7 @@ header .phone {
   }
 }
 
+/* Learning and courses available mobile (phone) spec */
 @media only screen and (min-width: 320px) and (max-width: 480px){
   .majors.desktop {
     display: none;
@@ -466,7 +478,6 @@ header .phone {
 }
 
 .thesis h2 {
-  font-weight: bolder;
   font-size: 2rem;
   text-align: center;
   line-height: 2.25rem;
@@ -509,6 +520,7 @@ header .phone {
   background-color: lightgray;
 }
 
+/* Thesis and exhibits mobile specs  */
 @media only screen and (max-width: 767px) {
   .thesis {
     padding: 2rem 0 1.5rem 0;
@@ -554,6 +566,7 @@ footer .copyright {
   color: red;
 }
 
+/* Footer mobile (phone) specs */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .links {
     display: none;
