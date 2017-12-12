@@ -1,3 +1,4 @@
+/*   */
 html {
   font-family: Helvetica;
   font-size: 16px;
@@ -98,8 +99,13 @@ header .logo {
 header .bold {
   font-weight: bold;
 }
+
 header .phone {
   display: none;
+}
+
+.desktop a:hover {
+  color: blue;
 }
 
 @media only screen and (max-width: 767px) {
@@ -195,13 +201,15 @@ header .phone {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem 1.5rem;
+  padding: 1rem 0 2rem 0;
   background-color: white;
 }
 
 .main {
   display: flex;
   max-width: 60%;
+  padding-top: 1rem;
+  padding-left: 1.5rem;
   flex-direction: column;
   justify-content: center;
   border-right: : 1px black solid;
@@ -261,14 +269,24 @@ header .phone {
   justify-content: center;
 }
 
+.trio .image-container {
+  padding: 1rem;
+  max-width: 35%;
+}
+
 .trio .content {
   width: 65%;
+  padding-right: 1rem;
 }
 
 .trio p {
   font-size: 1rem;
   line-height: 1.1rem;
   padding: 1rem 0;
+}
+
+.trio:hover {
+  background-color: lightgray;
 }
 
 .image-container.mobile {
@@ -285,12 +303,6 @@ header .phone {
     padding-top: 5%;
     padding-bottom: 0;
   }
-  .about .image-container {
-    padding: 0 0.5rem 1rem 0.5rem;
-  }
-/*  .image-container.mobile {
-    display: none;
-  }*/
 }
 
 @media only screen and (max-width: 767px) {
@@ -301,7 +313,6 @@ header .phone {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   .information {
-    padding: 0;
     padding-bottom: 2rem;
   }
   .image-container.desktop {
@@ -318,9 +329,15 @@ header .phone {
   .trio .content {
     max-width: 100%;
     padding: 0 2rem;
+    padding-bottom: 1rem;
+  }
+  .trio .content a {
+    color: purple;
+    text-decoration: underline;
   }
 }
 
+/* Learning and courses available spec */
 .learn {
   display: flex;
   flex-direction: column;
@@ -361,6 +378,11 @@ header .phone {
   height: 6rem;
 }
 
+.subject a {
+  text-decoration: none;
+  color: black;
+}
+
 .course {
     padding: 0.5rem 0;
 }
@@ -385,7 +407,7 @@ header .phone {
   .subject .content p {
     font-size: 0.85rem;
   }
-  h3 {
+  .subject  .content h3 {
     font-size: 1rem;
   }
 }
@@ -409,12 +431,16 @@ header .phone {
     color: white;
     text-decoration: none;
   }
+  .content a:hover{
+    color: blue;
+  }
 }
 
+/* Thesis and exhibits specs  */
 .thesis {
   display: block;
   flex-direction: row;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0;
   background-color: rgb(243, 245, 245);
 }
 
@@ -426,16 +452,17 @@ header .phone {
 .thesis .video {
   display: flex;
   max-width: 60%;
+  padding-left: 1.5rem;
   flex-direction: column;
   justify-content: center;
 }
 
 .thesis .video-container {
-  padding: 0 1.5rem 2rem 0;
+  padding: 1rem 1.5rem 0 0;
 }
 
 .thesis .content {
-  padding: 0 1.5rem 1.5rem 0;
+  padding: 0.5rem 1.5rem 0 0;
 }
 
 .thesis h2 {
@@ -443,7 +470,7 @@ header .phone {
   font-size: 2rem;
   text-align: center;
   line-height: 2.25rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .thesis h3 {
@@ -456,7 +483,7 @@ header .phone {
 }
 
 .exhibits .image-container {
-  padding: 0 1rem 2rem 1rem;
+  padding: 1rem;
   max-width: 35%;
 }
 
@@ -472,15 +499,14 @@ header .phone {
   justify-content: center;
 }
 
-.exhibit .content {
-  width: 65%;
-  padding: 5% 0;
-}
-
 .exhibit p {
   font-size: 1rem;
   line-height: 1.1rem;
   padding: 0.75rem 0;
+}
+
+.exhibit:hover {
+  background-color: lightgray;
 }
 
 @media only screen and (max-width: 767px) {
@@ -492,6 +518,7 @@ header .phone {
   }
   .thesis .video {
     max-width: 100%;
+    padding-left: 0;
   }
   .thesis .video-container {
     padding: 0;
@@ -504,6 +531,7 @@ header .phone {
   }
 }
 
+/* Footer specs */
 footer {
   width: 100%;
   border-top: solid 1px #000000;
@@ -520,6 +548,10 @@ footer .copyright {
   display: flex;
   float: right;
   justify-content: space-between;
+}
+
+.links a:hover {
+  color: red;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
